@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Booking Application</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Movie Booking App</h1>
+  </header>
+
+  <section class="movies"></section>
+
+  <section class="filters">
+    <label for="genreFilter" style="color: aliceblue; font-weight:bold;
+      font-size:20px;
+      ">Filter by Genre:</label>
+    <select class="filter" id="genreFilter"></select>
+  </section>
+
+  <section class="search">
+    <input type="text" id="searchInput" placeholder="Search movies..." style="padding: 10px 71px;
+      font-size: 17px;
+      border-radius: 12px; " />
+  </section>
+
+  <section class="listMovie"></section>
+  <div class="modal" id="movieModal"></div>
+  <section class="form"></section>
+
+  <script src="App.js"></script>
+</body>
+
+</html>

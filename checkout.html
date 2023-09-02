@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="checkout.css"> 
+  <title>Checkout</title>
+  <script src="checkout.js" defer></script>
+</head>
+<style>
+    /* styles.css */
+
+/* Global Styles */
+
+
+</style>
+<body>
+  <div class="container">
+          <div class="checkout-container">
+            <div class="summary">
+              <h2>Summary</h2>
+              <p>Movie: <span id="movie-name"></span></p>
+              <p>Cost of a ticket: ₹<span id="ticket-cost"></span></p>
+              <label for="num-tickets">Number of Tickets:</label>
+              <input type="number" id="num-tickets" min="1" value="1">
+              <p>Convenience Fee(1.75%): ₹<span id="convenience-fee"></span></p>
+              <p>Subtotal: ₹<span id="subtotal"></span></p>
+            </div>
+          </div>
+
+          <div class="payment-section">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method:</label>
+                    <select id="paymentMethod" name="paymentMethod">
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">UPI</option>
+                    </select>
+                </div>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+      </div> 
+    </div>
+    <div></div>
+    
+  </body>
+</html>
